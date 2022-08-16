@@ -1,0 +1,105 @@
+.overview{
+    display: flex;
+    width: calc(100% - 15rem);
+    margin-left: 15rem;
+}
+
+.overview-info{
+    width: calc(100% - 18rem);
+    min-width: 20rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.overview-info-raw{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.overview-chart{
+    width: 45%;
+    min-width: 16rem;
+    height: 14rem;
+    background-color: rgba(223, 223, 223, 0.3);
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.overview-chart h3{
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+    margin-left: 0.5rem;
+}
+
+.overview-chart-large{
+    background-color: rgba(223, 223, 223, 0.3);
+    width: 80%;
+    height: 18rem;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.overview-chart-large h3 {
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+    margin-left: 0.5rem;
+}
+
+.overview-card-container{
+    width: 45%;
+    min-width: 16rem;
+    margin-bottom: 1rem;
+}
+
+.overview-history {
+    background-color: var(--melon);
+    width: 18rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.overview-history h3:first-child {
+    display: none;
+}
+
+@media screen and (max-width: 830px){
+    .overview{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 625px){
+    .overview{
+        flex-wrap: wrap;
+    }
+
+    .overview-info {
+        width: 100%;
+    }
+
+    .overview-history{
+        width: 100%;
+        position: inherit;
+        height: inherit;
+        background-color: white;
+    }
+
+    .overview-history h3:first-child {
+        display: inherit;
+    }
+}

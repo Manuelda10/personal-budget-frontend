@@ -1,0 +1,28 @@
+.profile{
+    width: 80%;
+    min-width: 9.5rem;
+    background-color: rgba(223, 223, 223, 0.3);
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.profile img{
+    width: 5rem;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.profile h3, p{
+    margin: 0;
+}
+
+.profile p{
+    color: grey;
+}
